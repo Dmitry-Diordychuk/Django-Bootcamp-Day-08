@@ -5,6 +5,9 @@ pip3 install -r requirement.txt
 
 pip3 install ../ex00/django-gallery/dist/django-gallery-0.1.tar.gz
 
+python3 ./django_project/manage.py migrate
+python3 ./django_project/manage.py collectstatic
+
 cp nginx.conf /usr/local/etc/nginx/nginx.conf
 mkdir /usr/local/etc/nginx/servers/
 cp myproject /usr/local/etc/nginx/servers/myproject
